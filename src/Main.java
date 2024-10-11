@@ -4,10 +4,10 @@ import java.awt.*;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Dzien dobry!");
+//        System.out.printf("Dzien dobry!");
         JFrame fr = new JFrame();
         fr.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         fr.setVisible(true);
@@ -17,6 +17,7 @@ public class Main {
             for (int k = 0; k < 9; k++){
                 JPanel panel = new JPanel();
                 if ((i + k) % 2 != 0){
+                    //da
                     panel.setBackground(Color.BLACK);
                 } else panel.setBackground(Color.WHITE);
                 fr.add(panel);
